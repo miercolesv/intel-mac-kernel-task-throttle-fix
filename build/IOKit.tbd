@@ -1,0 +1,10 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ x86_64-macos ]
+install-name:    '/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit'
+current-version: 275
+exports:
+  - targets:     [ x86_64-macos ]
+    symbols:     [ _IOServiceMatching, _IOServiceGetMatchingService, _IOServiceOpen,
+                   _IOServiceClose, _IOObjectRelease, _IOConnectCallStructMethod ]
+...
